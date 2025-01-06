@@ -1,0 +1,52 @@
+/* Mobile devices (up to 768px width) */
+@media only screen and (max-width: 768px) {
+    /* Container adjustments */
+    .container {
+      width: 100%; /* Full width for smaller screens */
+      padding: 10px;
+      margin: 0;
+    }
+  
+    /* Input and button adjustments */
+    .addtodo input {
+      width: 100%; /* Adjust input width to fit smaller screens */
+      margin-bottom: 10px;
+    }
+  
+    .addtodo button {
+      width: 100%; /* Buttons take full width */
+    }
+  
+    /* Todo items adjustments */
+    .todos {
+      margin: 0 auto;
+    }
+  
+    .todo {
+      flex-direction: column; /* Stack items vertically */
+      align-items: flex-start; /* Align content to the start */
+    }
+  
+    .todo .buttons {
+      flex-direction: row; /* Ensure buttons stay horizontal */
+      justify-content: space-between;
+      width: fit-content; /*Buttons take full width of their container*/
+      /* margin:2px; */
+      gap:10px;
+    }
+  
+    .todo .buttons button {
+      width: fit-content; /* Make buttons smaller to fit side by side */
+      margin: 2px 0; /* Add some spacing */
+    }
+  
+    /* Text adjustments */
+    h2 {
+      font-size: 1.2rem; /* Smaller font size for headings */
+    }
+  
+    .addtodo h2 {
+      text-align: center; /* Center text for better appearance */
+    }
+  }
+  
